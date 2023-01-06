@@ -8,7 +8,8 @@
     <meta name="author" content="Gabriela Munhoz">
     <title>WDD 230 - Portal - Gabriela Munhoz</title>
 
-    <link href="styles/style.css" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
@@ -27,7 +28,7 @@
         <a href="https://www.linkedin.com/in/gabmunhoz88/">LinkedIn</a>
         <a href="https://www.byui.edu/">BYU-Idaho</a>
     </nav>
-    <img src="images/profile-picture.jpg    " alt="Gabriela's profile picture">
+    <img src="images/profile-picture.jpg" alt="Gabriela's profile picture">
     <h1>Gabriela G. Munhoz</h1>
     </header>
     <main>
@@ -51,6 +52,10 @@
         </section>
     </main>
     <aside>Right Sidebar</aside>
-    <footer>Footer Content — Header.com</footer>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Gabriela G. Munhoz 🇧🇷</p>
+        <p class="highlight">Last Modification: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
 </body>
 </html>
