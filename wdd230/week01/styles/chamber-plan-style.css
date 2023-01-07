@@ -1,0 +1,114 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 18px;
+	font-family: Ubuntu, "Open Sans", sans-serif;
+}
+
+img{
+    width: 100%;
+}
+
+header, main, footer {
+	margin: 2rem 1.5rem;
+}
+
+h1 {
+	font-size: 1.1rem;
+}
+
+h2 {
+	color: #000;
+    
+}
+
+p {
+    font-family: "Open Sans";
+    font-size: 1rem;
+}
+
+nav {
+	margin: 0 auto;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+	font-family: "Open Sans", sans-serif;
+	background-color: #e6cd44;
+}
+
+nav ul {
+	overflow: hidden;
+}
+
+a {
+	display: block;
+	color: #000;
+	text-decoration: none;
+	padding: .7em;
+	transition: .3s;
+}
+
+a:hover {
+   	opacity: .75;
+}
+
+.active {
+    color: #fff;
+    background-color: #8e9394;
+}
+
+.logo {
+	font-size: 24px;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+}
+
+.nav-list {
+	list-style: none;
+	display: flex;
+}
+
+.nav-list li {
+	letter-spacing: 2px;
+	margin-left: 32px;
+}
+
+main {
+	display: grid;
+	grid-template-columns: 1fr;
+	font-size: .8rem;
+}
+
+section {
+	margin: 1rem;
+	padding: 1rem;
+	background-color: #eee;
+}
+
+section img {
+    width: 250px;
+	margin: 1rem;
+}
+
+.palette {
+	width: 275px;
+	margin: 1rem;
+}
+
+footer {
+	background-color: #8093cf;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+	padding: .5rem;
+}
