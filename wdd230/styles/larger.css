@@ -1,11 +1,14 @@
-@media only screen and (min-width: 56rem){
+@media only screen and (min-width: 49rem){
     header {
-        text-align: center;
+        grid-template-columns: auto auto auto;
         padding: .5rem;
         box-shadow: 0 0 20px silver;
     }
+    header button {
+        display: none;
+    }
     header img {
-        max-width: 250px;
+        max-width: 200px;
     }
     header, main, footer {
         margin: 2rem 1.5rem;
@@ -13,7 +16,29 @@
     }
     header h1 {
         font-weight: 700;
-        font-size: 40px;
+        font-size: 5vw;
+        justify-content: center;
+    }
+    nav {
+        display: flex;
+        position: initial;
+        max-height: 50px;
+        grid-column: 3;        
+    }
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+    }
+    nav li {
+        margin: -20px 20px;
+
+    }
+    #mode {
+        position:absolute;
+	    top: 12rem;
+	    right: 5rem;
+	    font-size: 1.8vw;
+	    cursor: pointer;
     }
     main {
         display: grid;
