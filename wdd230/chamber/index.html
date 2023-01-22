@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunset Harbor | Home</title>
+    <meta name="description" content="Week 2 Assignment in WDD 230: Web Frontend Development at BYU-I">
+    <meta name="author" content="Gabriela G. Munhoz">
+
+    <meta property="og:title" content="Sunset Harbor Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jxxvvxxkstan.github.io/wdd230/wdd230/chamber/index.html">
+    <meta property="og:image" content="https://pactoalegre.poa.br/sites/default/files/2019-03/IMG_03977.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu&display=swap" rel="stylesheet">
+
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
+
+    <link rel="icon" href="favicon.ico">
+
+</head>
+<body> 
+    <header>
+        <div class="logo">
+            <img src="images/logo-only.png" alt="sunset harbor chamber logo">
+        </div>
+        <div class="headings">
+            <h1>Sunset Harbor</h1>
+            <p class="m">Porto Alegre Chamber of Commerce</p>
+        </div>
+        <nav class="navbar">
+            <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+            <ul id="primaryNav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+            </ul>
+        </nav>
+        <div class="social">
+            <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.png" alt="instagram icon"></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.png" alt="linkedin icon"></a>
+        </div>
+        <p class="date"></p>
+    </header>
+    <main>
+        <section class="hero">
+            <h2>Welcome to Porto Alegre!</h2>
+            <div id="callToAction">
+                <a href="#">Join the Chamber</a>
+                <img src="images/orla-guaiba-edit.jpeg" alt="sunset at guaiba lake">
+            </div>
+        </section>
+        <section id="weather">
+            <h2>Weather</h2>
+            <p><a href="https://placeholder.com/"><img src="https://via.placeholder.com/150x150" alt="placeholder image"></a></p>
+        </section>
+        <section id="event">
+            <h2>Monthly Chamber Gathering</h2>
+            <p>Sat 18 Jun 2022 - 5 p.m. </p>
+            <img src="images/networking.jpg" alt="People at a gathering">
+        </section>
+        <section id="news">
+            <h2>New Release</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et facilis laboriosam voluptatum, mollitia debitis illum a natus earum autem incidunt.</p>
+        </section>
+        <section id="join">
+            <button>Join Us!</button>
+            <h2>Discover how to join the chamber of commerce and how it will benefit your organization!</h2>
+        </section>
+        <section class="spotlight">
+            <div id="spot1">
+                <img src="images/skate-park.jpeg" alt="Skaters at Megapista da Orla Skate Park">
+                <div class="container">
+                    <h3>Business Opportunities at Megapista da Orla Skate Park</h3>
+                </div>
+            </div>
+            <div id="spot2">
+                <img src="images/wholesale-market.jpeg" alt="Bom Fim Wholesale Market">
+                <div class="container">
+                    <h3>Join Bom Fim Wholesale Market</h3>
+                </div>
+            </div>
+            <div id="spot3">
+                <img src="images/ospa-theater.jpg" alt="Ospa Theater">
+                <div class="container">
+                    <h3>Chamber Events at Ospa Theater</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <img class="logo-footer" src="images/logo-only.png" alt="sunset harbor logo">
+        <div class="name">
+            <h2>Sunset Harbor</h2>
+            <h3>Chamber of Commerce</h3>
+        </div>
+        <div class="address">
+            <p>Av. Carlos Gomes, ####</p>
+            <p>Porto Alegre - RS - Brazil</p>
+        </div>
+        <div class="contact">
+            <p class="email">contact@sunsetharbor.com</p>
+            <p class="phone">+55 51 99999-9999</p>
+            <p><a class="location" href="https://goo.gl/maps/SQWS6kiYG2yiFxtM7" target="_blank">Location 📍</a></p>
+        </div>
+        <div class="copyright">
+        <p>&copy; <span id="currentYear"></span> Sunset Harbor|
+        <a href="https://jxxvvxxkstan.github.io/wdd230/wdd230/index.html" target="_blank">Gabriela Munhoz</a> | WDD 230 Project </p>
+        <p>Last Updated: <span id="currentDate"></span></p>
+        </div>
+    </footer>
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>
