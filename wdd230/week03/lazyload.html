@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Progressive Loading</title>
+
+    <link href="styles/lazyload.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1> Progressive Loading (Images)</h1>
+    </header>
+    <main>
+        <picture>
+            <img data-src="https://placekitten.com/300/400" src="http://via.placeholder.com/300x400" alt="kitten">
+        </picture>
+        <picture>
+            <img  data-src="https://picsum.photos/300/400" src="http://via.placeholder.com/300x400" alt="random image">
+        </picture>
+        <picture>
+            <img data-src="https://placekitten.com/400/300" src="http://via.placeholder.com/400x300" alt="kitten">
+        </picture>
+        <picture>
+            <img  data-src="https://picsum.photos/400/300" src="http://via.placeholder.com/400x300" alt="random image">
+        </picture>
+        <picture>
+            <img data-src="https://placekitten.com/500/400" src="http://via.placeholder.com/500x400" alt="kitten">
+        </picture>
+        <picture>
+            <img  data-src="https://picsum.photos/500/400" src="http://via.placeholder.com/500x400" alt="random image">
+        </picture>
+    </main>
+    <footer>
+        <a href="https://jxxvvxxkstan.github.io/wdd230/wdd230/index.html">Gabriela G. Munhoz </a>
+    </footer>
+    <script src="scripts/lazyload.js"></script>
+</body>
+</html>

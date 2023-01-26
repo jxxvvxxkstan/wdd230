@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Mono", "Roboto", monospace, sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    padding: 1rem;
+}
+
+picture {
+    padding: 1rem;
+}
+
+img {
+    width: 100%;
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
+
+img[data-src] {
+    filter: blur(0.2em);
+}
+
+header, footer {
+    padding: 2rem;
+    background-color: #0CCE6B;
+    text-align: center;
+}
+footer a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+footer a:hover {
+    font-size: larger;
+    text-shadow: 1px 2px 4px #000;
+    font-weight: 800;
+}
