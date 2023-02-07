@@ -243,7 +243,7 @@ section h2 {
     text-align: center;
 }
 .gallery img {
-    margin: 1rem 2rem;
+    margin: 0 auto;
 }
 
 /* ~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~ */

@@ -178,6 +178,10 @@
         grid-row: 1/5;
     }
 
+    .gallery img {
+        margin: 1rem 2rem;
+    }
+
     .pics {
         width: 300px;
         transition: transform .3s;
