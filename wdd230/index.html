@@ -29,7 +29,7 @@
 </head>
 <body>
     <header>
-    <img src="images/profile-picture.webp" alt="Gabriela's profile picture">
+    <img src="images/profile-picture.webp" alt="Gabriela's profile picture" loading="lazy">
     <h1>Gabriela G. Munhoz</h1>
     <button>
         <span class="material-symbols-outlined">
@@ -48,13 +48,18 @@
     </nav>
     <div id="mode">🖤 <span>Dark Mode</span></div>
     </header>
-    <!-- <picture>
-        <source media="min-width: 960px" data-src="https://jxxvvxxkstan.github.io/wdd230/wdd230/images/temple-large.webp" src="http://via.placeholder.com/960x640" alt="Porto Alegre Temple">
-        <source media="min-width: 400px" data-src="https://jxxvvxxkstan.github.io/wdd230/wdd230/images/temple-small.webp" src="http://via.placeholder.com/400x267" alt="Porto Alegre Temple">
-        <img class="hero" src="https://jxxvvxxkstan.github.io/wdd230/wdd230/images/temple-large.webp" alt="Porto Alegre Temple" loading="lazy" width="960" height="640">
-    </picture> -->
     <main>
-        <h2>WDD 230: Course Activity Portal</h2>
+        <div class="hero">
+            <picture>
+                <source data-src="images/temple-small.webp" src="http://via.placeholder.com/400x300" media="(max-width: 400px)">
+                <img data-src="images/temple-large.webp" alt="Porto Alegre Temple" loading="lazy" width="960" height="640">
+            </picture>
+        </div>
+        <div class="hero-label">
+            <p>Porto Alegre Temple</p>
+        </div>
+        <div class="grid-container">
+            <h2>WDD 230: Course Activity Portal</h2>
         <section class="card">
             <h3>Learning Activities</h3>
             <ul>
@@ -74,14 +79,16 @@
             </ul>
         </section>
         <section class="card">
+            <h3>Information</h3>
+            <p><span class="label">Visit Count: </span><span class="visits"></span></p>
+        </section>
+        <section class="card">
             <h3>Project</h3>
             <p><a href="https://jxxvvxxkstan.github.io/wdd230/wdd230/chamber/index.html">Sunset Harbor Chamber of Commerce</a></p>
         </section>
-        <section class="card">
-            <h3>Information</h3>
-            <p><a href="https://placeholder.com/"><img src="https://via.placeholder.com/300x100" alt="placeholder image"></a></p>
-        </section>
+        </div>
     </main>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d441830.1641441883!2d-51.43779605086806!3d-30.099966505759433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9519784e88e1007d%3A0xc7011777424f60bd!2sPorto%20Alegre%20-%20RS!5e0!3m2!1sen!2sbr!4v1675738826328!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <footer>
         <p>&copy; <span id="currentYear"></span> Gabriela G. Munhoz 🇧🇷</p>
         <p class="highlight">Last Modification: <span id="lastModified"></span></p>
