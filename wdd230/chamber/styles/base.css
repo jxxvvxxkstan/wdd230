@@ -142,6 +142,10 @@ main section {
     padding: 10px;
 }
 
+section h2 {
+    padding: .5rem;
+}
+
 #banner {
     background-color: rgba(128, 147, 207, .8);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .3);
@@ -230,6 +234,17 @@ main section {
     padding: 2px 16px;
 }
 
+/*DISCOVER*/
+.gallery h3 {
+    padding: .5rem;
+    text-align: center;
+}
+.gallery h2 {
+    text-align: center;
+}
+.gallery img {
+    margin: 1rem 2rem;
+}
 
 /* ~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~ */
 

@@ -32,7 +32,7 @@
     }
 
 /* ~~~~~~~~~~~~~~ MAIN ~~~~~~~~~~~~~~ */
-
+/* HOME */
     main {
         display: grid;
         gap: 10px;
@@ -123,6 +123,70 @@
         grid-column: 2/4;
         grid-row: 4/5;
     }
+
+    /* DISCOVER */
+
+    .discover-grid {
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: auto 30%;
+    }
+
+    .discover-grid h2 {
+        margin-left: 1rem;
+    }
+
+    .discover-grid p {
+        padding: 1rem;
+    }
+
+    .the-city, .demographics, .history, .economy {
+        grid-column: 1/2;
+        font-size: medium;
+    }
+
+    .the-city img {
+        float: left;
+        max-width: 400px;
+        margin: 1rem;
+        box-shadow: 0 0 10px rgb(75, 75, 75);
+    }
+
+    .demographics img {
+        max-width: 400px;
+        height: 228px;
+        padding: 10px;
+        float: right;
+    }
+
+    .history img {
+        max-width: 400px;
+        margin: 1rem;
+        box-shadow: 0 0 10px rgb(75, 75, 75);
+        float: left;
+    }
+
+    .economy img {
+        max-width: 400px;
+        margin: 1rem;
+        box-shadow: 0 0 10px rgb(75, 75, 75);
+        float: right;
+    }
+
+    .gallery {
+        grid-column: 2;
+        grid-row: 1/5;
+    }
+
+    .pics {
+        width: 300px;
+        transition: transform .3s;
+    }
+
+    #pic1:hover, #pic2:hover, #pic3:hover, #pic4:hover, #pic5:hover {
+        transform: scale(1.05); 
+    }
+
 
 /* ~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~ */
 
