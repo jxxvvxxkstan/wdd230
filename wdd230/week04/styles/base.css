@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Ubuntu", sans-serif;
+    font-size: medium;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+td,
+th {
+    border: 1px solid rgb(190, 190, 190);
+    padding: 10px;
+    text-align: center;
+}
+
+td {
+    text-align: center;
+}
+
+#compiled {
+    font-size: smaller;
+}
+
+tr:nth-child(even) {
+    background-color: #eee;
+}
+
+th[scope="col"] {
+    background-color: hsl(226, 45%, 75%);
+    color: rgb(55, 55, 55);
+}
+
+th[scope="row"] {
+    background-color: #d7d9f2;
+}
+
+th[scope="colgroup"] {
+    font-size: x-large;
+    background-color: hsl(226, 45%, 65%);
+    color: rgb(57, 57, 57);
+}
+
+tfoot {
+    background-color: hsl(226, 45%, 75%);
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    font-weight: 600;
+    color: rgb(62, 62, 62);
+    text-shadow: 0 0 5px rgb(125, 125, 125);
+}
+
+table {
+    border-collapse: collapse;
+    box-shadow: 0 0 40px rgb(190, 190, 190);
+    letter-spacing: 1px;
+    font-size: .8rem;
+}
