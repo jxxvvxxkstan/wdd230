@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sunset Harbor | Home</title>
-    <meta name="description" content="Week 2 Assignment in WDD 230: Web Frontend Development at BYU-I">
+    <meta name="description" content="Chamber Assignment - WDD 230: Web Frontend Development at BYU-I">
     <meta name="author" content="Gabriela G. Munhoz">
 
     <meta property="og:title" content="Sunset Harbor Chamber of Commerce">
@@ -57,21 +57,20 @@
         </section>
         <section id="weather">
             <h2>Weather</h2>
-            <p><a href="https://placeholder.com/"><img src="https://via.placeholder.com/150x150" alt="placeholder image"></a></p>
         </section>
         <section id="event">
             <h2>Monthly Chamber Gathering</h2>
-            <p>Sat 18 Jun 2022 - 5 p.m. </p>
+            <p>Sat 18 Jan 2023 - 5 p.m. </p>
             <img src="images/networking.jpg" alt="People at a gathering">
         </section>
         <section id="news">
             <h2>New Release</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et facilis laboriosam voluptatum, mollitia debitis illum a natus earum autem incidunt.</p>
+            <img src="https://loremflickr.com/450/200/market" alt="Random Market">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et facilis laboriosam voluptatum, mollitia debitis illum a natus earum autem incidunt.
+                <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
         </section>
-        <section id="join">
-            <button>Join Us!</button>
-            <h2>Discover how to join the chamber of commerce and how it will benefit your organization!</h2>
-        </section>
+        
         <section class="spotlight">
             <div id="spot1">
                 <img src="images/skate-park.jpeg" alt="Skaters at Megapista da Orla Skate Park">
@@ -92,6 +91,32 @@
                 </div>
             </div>
         </section>
+        <form method="get" action="thanks.html">
+            <fieldset>
+            <legend>Contact Us!</legend>
+            <label class="top">Full Name: <input type="text" name="fullName" required></label>
+            <label class="top">Email: <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+            <label class="top" for="r">Rating [ <span id="rating"></span> ]:</label>
+            <div class="rangecontainer">
+                <input type="range" min="1" max="10" id="r" name="r" list="five">
+                <div class="ratinglabels">
+                    <span class="ratevalue">1</span>
+                    <span class="ratevalue">2</span>
+                    <span class="ratevalue">3</span>
+                    <span class="ratevalue">4</span>
+                    <span class="ratevalue">5</span>
+                    <span class="ratevalue">6</span>
+                    <span class="ratevalue">7</span>
+                    <span class="ratevalue">8</span>
+                    <span class="ratevalue">9</span>
+                    <span class="ratevalue">10</span>
+            </div>
+            </div>
+            <label class="top">Username: <input type="password" name="username" pattern="[0-9a-zA-Z]{5,12}" title="Must contain at least five characters and at most 12 characters and that at least one of the characters is not alpha-numeric (a-zA-Z0-9)" required></label>
+            <label class="top">Confirm Username: <input type="password" name="userConf" required></label>
+            <input type="submit" value="Send Contact" class="submitBtn">
+        </fieldset>
+        </form>
     </main>
     <footer>
         <img class="logo-footer" src="images/logo-only.png" alt="sunset harbor logo">

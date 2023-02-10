@@ -1,3 +1,10 @@
+:root {
+    --main-color: #e6cd44;
+    --second-color: #eee;
+    --decoration-color-indigo: #8093cf;
+    --decoration-color-red: #e23932;
+    --shadow: 0 4px 8px 0 rgba(0, 0, 0, .4);
+}
 * {
     padding: 0;
     margin: 0;
@@ -24,13 +31,13 @@ img {
 }
 
 section {
-    background-color: #eee;
+    background-color: var(--second-color);
 }
 
 /* ~~~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~~~ */
 
 header, footer {
-    background-color: #e6cd44;
+    background-color: var(--main-color);
     font-family: "Open Sans";
     text-transform: uppercase;
 }
@@ -64,7 +71,7 @@ header {
 .m {
 	letter-spacing: 1pt;
 	font-weight: 700;
-	font-size: 0.8rem;
+	font-size: .8rem;
 }
 
 .social {
@@ -132,7 +139,7 @@ nav ul.open {display: block;}
 /* ~~~~~~~~~~~~~~ MAIN ~~~~~~~~~~~~~~ */
 
 main {
-	display: grid;
+	display: block;
     padding: 10px;
     gap: 15px;
 	font-size: .8rem;
@@ -146,13 +153,13 @@ section h2 {
     padding: .5rem;
 }
 
-#banner {
+/* #banner {
     background-color: rgba(128, 147, 207, .8);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .3);
     text-align: center;
     padding: 1rem;
     grid-row: 1;
-}
+} */
 
 
 .hero {
@@ -163,7 +170,7 @@ section h2 {
 
 .hero h2 {
     padding: 1rem;
-    background-color: #eee;
+    background-color: var(--second-color);
 }
 
 .hero img {
@@ -204,16 +211,54 @@ section h2 {
     grid-column: 1;
     grid-row: 5;
 }
+/* FORM */
+form fieldset {
+    display: block;
+    background-color: var(--second-color);
+    border: none;
+    padding: 1rem;
+}
 
-#join {
-    display: none;
+form legend {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 3.5rem 0 0 0;
+}
+
+form label.top, form div {
+    display: block;
+    padding: .5rem;
+    font-size: 1rem;
+}
+
+form label.top input {
+    display: block;
+    font-size: 1rem;
+    padding: .75rem;
+    border: 1px solid #999;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 20rem;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: var(--decoration-color-indigo);
+    color: white;
+    font-size: 1rem;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 1rem 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
 }
 
 .spotlight {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: #eee;
+    background-color: var(--second-color);
     padding: 10px;
     grid-column: 1;
     grid-row: 5;
@@ -234,7 +279,8 @@ section h2 {
     padding: 2px 16px;
 }
 
-/*DISCOVER*/
+/* ~~~~~~~~~~~~~~ DISCOVER ~~~~~~~~~~~~~~ */
+
 .gallery h3 {
     padding: .5rem;
     text-align: center;
@@ -244,6 +290,7 @@ section h2 {
 }
 .gallery img {
     margin: 0 auto;
+    box-shadow: var(--shadow);
 }
 
 /* ~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~ */
