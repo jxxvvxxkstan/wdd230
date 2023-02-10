@@ -81,7 +81,6 @@
     .spotlight {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
         align-items: flex-start;
         grid-column: 4;
         grid-row: 1/4;
@@ -196,6 +195,34 @@
         transform: scale(1.05); 
     }
 
+    /* JOIN */
+
+    .join {
+        display: block;
+        max-width: 800px;
+        margin: auto;
+    }
+
+    .join section {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .join h2 {
+        text-align: center;
+    }
+
+    form input.submitBtn {
+        align-self: center;
+        font-size: larger;
+    }
+
+    /* THANK YOU */
+
+    .thanks-section {
+        display: block;
+        max-width: 500px;
+    }
 
 /* ~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~ */
 

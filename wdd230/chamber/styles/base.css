@@ -293,6 +293,54 @@ form input.submitBtn {
     box-shadow: var(--shadow);
 }
 
+/* ~~~~~~~~~~~~~~ JOIN ~~~~~~~~~~~~~~ */
+
+form label.top, form div {
+    display: block;
+    padding-bottom: 1rem;
+    font-size: .8rem;
+}
+
+form label.top input, form label.top select, textarea {
+    width: 100%;
+    font-size: 1rem;
+    padding: .75rem;
+    display: block;
+    border-radius: 4px;
+}
+
+form label.top input, form label.top select {
+    max-width: 50rem;
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+    font-weight: 600;
+    font-size: larger;
+}
+
+/* ~~~~~~~~~~~~~~ THANKS ~~~~~~~~~~~~~~ */
+
+.thanks {
+    padding: 2rem;
+    max-width: 50rem;
+    margin: 0 auto;
+}
+
+form label.top input:required {
+    border-left: var(--decoration-color-red) solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: var(--decoration-color-indigo) solid 6px;
+}
+
+.required {
+    color: var(--decoration-color-red);
+}
+
+
 /* ~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~ */
 
 footer {
