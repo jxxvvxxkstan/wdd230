@@ -1,0 +1,23 @@
+{
+    "familyName" : "Munhoz",
+    "dateMovedWard" : "04/01/2020",
+    "numPeopleFamily" : 3,
+    "visitedByBishopric" : true,
+    "familyMembers" : [
+      {
+        "name" : "Valter",
+        "gender" : "male",
+        "birthdate" : "05/30/1988"
+      },
+      {
+        "name" : "Gabriela",
+        "gender" : "female",
+        "birthdate" : "11/28/1988"
+      },
+      {
+        "name" : "Adora",
+        "gender" : "female",
+        "birthdate" : "04/12/2011"
+      }
+    ]
+  }
