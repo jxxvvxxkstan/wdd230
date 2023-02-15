@@ -18,6 +18,7 @@ body {
 }
 
 p {
+    font-size: 1rem;
     padding: .5rem;
 }
 
@@ -147,20 +148,13 @@ main {
 
 main section {
     padding: 10px;
+    margin: .5rem 0;
 }
 
 section h2 {
+    font-size: 1.5rem;
     padding: .5rem;
 }
-
-/* #banner {
-    background-color: rgba(128, 147, 207, .8);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .3);
-    text-align: center;
-    padding: 1rem;
-    grid-row: 1;
-} */
-
 
 .hero {
     padding: 0;
@@ -198,25 +192,60 @@ section h2 {
     grid-row: 3;
 }
 
-#weather {
+.weather {
     width: auto;
-    height: 200px;
+    height: 250px;
     display: flex;
-    justify-content: center;
-    grid-column: 1;
-    grid-row: 4;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    margin: .5rem 2rem;
+}
+
+.weather #current-temp {
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.weather img {
+    width: 100%;
+    max-width: 10rem;
+    height: auto;
+}
+
+.weather figcaption {
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 600;
 }
 
 #news {
     grid-column: 1;
     grid-row: 5;
 }
+
+#news p {
+    font-size: 1rem;
+    margin: .5rem;
+}
+
+#news img {
+    width: 100%;
+    max-width: 630px;
+    max-height: 200px;
+    margin: .5rem;
+}
+
 /* FORM */
+
 form fieldset {
     display: block;
     background-color: var(--second-color);
     border: none;
     padding: 1rem;
+    margin-top: -1rem;
 }
 
 form legend {
@@ -254,6 +283,8 @@ form input.submitBtn {
     max-width: 20rem;
 }
 
+/* SPOTLIGHT */
+
 .spotlight {
     display: flex;
     flex-wrap: wrap;
@@ -266,16 +297,17 @@ form input.submitBtn {
 
 
 #spot1, #spot2  {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2);
+    box-shadow: var(--shadow);
     width: 85%;
     padding: 5px;
+    margin: 1rem;
 }
 
-#spot3 {
+#spot3, #spot4 {
     display: none;
 }
 
-.container {
+.spot-container {
     padding: 2px 16px;
 }
 
@@ -304,7 +336,7 @@ form label.top, form div {
 form label.top input, form label.top select, textarea {
     width: 100%;
     font-size: 1rem;
-    padding: .75rem;
+    padding: .75rem; 
     display: block;
     border-radius: 4px;
 }
@@ -340,6 +372,15 @@ form label.top input:required:valid {
     color: var(--decoration-color-red);
 }
 
+/* ~~~~~~~~~~~~~~ DIRECTORY ~~~~~~~~~~~~~~ */
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 200,
+  'GRAD' 0,
+  'opsz' 24
+}
 
 /* ~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~ */
 

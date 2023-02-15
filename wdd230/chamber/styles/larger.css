@@ -32,7 +32,9 @@
     }
 
 /* ~~~~~~~~~~~~~~ MAIN ~~~~~~~~~~~~~~ */
-/* HOME */
+
+    /* HOME */
+
     main {
         display: grid;
         gap: 10px;
@@ -41,22 +43,26 @@
 	    font-size: .8rem;
     }
 
-    /* #banner {
-        display: flex;
-        font-size: large;
-        grid-column: 1/5;
-        grid-row: 1;
-    } */
+    /* EVENT */
 
     #event {
-        height: 250px;
+        height: 300px;
+        margin: .5rem 0 0 0;
         grid-column: 1;
         grid-row: 1;
     }
+
+    /* HERO */
+
     .hero {
         background-color: transparent;
+        text-align: center;
         grid-column: 2/4;
         grid-row: 1/3;
+    }
+
+    .hero h2 {
+        text-align: center;
     }
 
     .hero img {
@@ -67,7 +73,7 @@
 
     #callToAction a {
         position: absolute;
-        top: 35rem;
+        top: 20rem;
         right: 20rem;
         width: 250px;
         text-align: center;
@@ -78,6 +84,8 @@
         background-color: rgba(220,220,220, .7);
     }
 
+    /* SPOTLIGHT */
+
     .spotlight {
         display: flex;
         flex-wrap: wrap;
@@ -86,39 +94,58 @@
         grid-row: 1/4;
     }
 
-    #spot1, #spot2, #spot3  {
+    #spot1, #spot2, #spot3, #spot4 {
+        box-shadow: var(--shadow);
         display: block;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2);
-        width: 95%;
+        width: 96%;
         padding: 5px;
+        margin: .5rem;
     }
 
-    .container {
+    #spot1:hover, #spot2:hover, #spot3:hover, #spot4:hover {
+        transform: scale(1.05); 
+    }
+
+    .spot-container{
         padding: 2px 16px;
     }
 
-    #weather {
+    .spot-container h3 {
+        font-size: .8rem;
+    }
+
+    /* WEATHER */
+
+    .weather {
         width: auto;
-        height: 200px;
+        height: 250px;
+        margin: .5rem 0 0 0;
         grid-column: 1;
         grid-row: 2;
     }
 
-    form fieldset {
-        grid-column: 1;
-        grid-row: 3;
-    }
+    /* JOIN */
 
     #join h2 {
         font-size: small;
         
     }
 
+    /* NEWS */
+
     #news {
+        margin-top: -9rem;
         grid-column: 2/4;
         grid-row: 3/4;
     }
 
+    /* FORM */
+
+    form fieldset {
+        margin: -1rem 0;
+        grid-column: 1;
+        grid-row: 3;
+    }
     form legend {
         font-size: 1.2rem;
     }
@@ -128,7 +155,7 @@
         font-size: .75rem;
     }
 
-    /* DISCOVER */
+/* ~~~~~~~~~~~~~~ DISCOVER ~~~~~~~~~~~~~~ */
 
     .discover-grid {
         display: grid;
@@ -195,7 +222,7 @@
         transform: scale(1.05); 
     }
 
-    /* JOIN */
+/* ~~~~~~~~~~~~~~ JOIN ~~~~~~~~~~~~~~ */
 
     .join {
         display: block;
@@ -207,7 +234,7 @@
         margin: 1rem;
         padding: 1rem;
     }
-
+ 
     .join h2 {
         text-align: center;
     }
@@ -223,6 +250,10 @@
         display: block;
         max-width: 500px;
     }
+
+/* ~~~~~~~~~~~~~~ DIRECTORY ~~~~~~~~~~~~~~ */
+
+
 
 /* ~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~ */
 

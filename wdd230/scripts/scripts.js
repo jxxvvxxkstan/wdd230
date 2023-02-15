@@ -72,3 +72,15 @@ localStorage.setItem("visits-ls", numVisits);
 todayDisplay.textContent = Date.now();
 
 // You can view the localStorage data using the Applications panel in the browsers's DevTools.
+
+// JSON data Weeks
+
+// const data = 'data/weeks.json'
+// let divWeeks = document.querySelector("#weeks")
+
+// fetch(data)
+// .then((response) => {
+//   response.json().then((weeks) => {
+//     divWeeks.innerHTML += weeks
+//   })
+// })

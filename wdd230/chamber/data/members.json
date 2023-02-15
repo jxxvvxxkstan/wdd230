@@ -1,0 +1,75 @@
+{
+    "members": [
+        {
+            "name": "OKPO",
+            "address": "Rua Tenente-Coronel Fabrício Pilar, 93 - Mont Serrat, Porto Alegre/RS",
+            "contactNumber": "(51) 1234-4321",
+            "webAddress": "https://www.instagram.com/okpo.culture/?hl=en",
+            "image": "images/okpo.jpg",
+            "memberLevel": "Gold Member"
+        },
+        {
+            "name": "PKC Group",
+            "address": "Av. Ipiranga, 7644 - Jardim Botânico, Porto Alegre/RS",
+            "contactNumber": "(51) 6789-9876",
+            "webAddress": "https://www.grupopkc.com.br/menus",
+            "image": [
+                {
+                    "businessImgURL": "images/pkc.jpg",
+                    "alt":
+                }
+            ],
+            "memberLevel": "Silver Member"
+        },
+        {
+            "name": "",
+            "address": "",
+            "contactNumber": "",
+            "webAddress": "",
+            "businessImgURL": "",
+            "memberLevel": ""
+        },
+        {
+            "name": "",
+            "address": "",
+            "contactNumber": "",
+            "webAddress": "",
+            "businessImgURL": "",
+            "memberLevel": ""
+        },
+        {
+            "name": "",
+            "address": "",
+            "contactNumber": "",
+            "webAddress": "",
+            "businessImgURL": "",
+            "memberLevel": ""
+        },
+        {
+            "name": "",
+            "address": "",
+            "contactNumber": "",
+            "webAddress": "",
+            "businessImgURL": "",
+            "memberLevel": ""
+        },
+        {
+            "name": "",
+            "address": "",
+            "contactNumber": "",
+            "webAddress": "",
+            "businessImgURL": "",
+            "memberLevel": ""
+        },
+        {
+            "name": "",
+            "address": "",
+            "contactNumber": "",
+            "webAddress": "",
+            "businessImgURL": "",
+            "memberLevel": ""
+        }
+    ]
+    }
+
+    

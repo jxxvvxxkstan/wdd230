@@ -9,7 +9,7 @@ const url = `https://api.openweathermap.org/data/2.5/weather?q=${townName}&appid
 
 
 function displayData(data) {
-    console.log(data)
+    // console.log(data)
     currentTemp.innerHTML = `${data.main.temp}&deg;F`
     weatherIcon.src=`http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
     weatherIcon.alt=data.weather[0].main
