@@ -75,12 +75,3 @@ todayDisplay.textContent = Date.now();
 
 // JSON data Weeks
 
-// const data = 'data/weeks.json'
-// let divWeeks = document.querySelector("#weeks")
-
-// fetch(data)
-// .then((response) => {
-//   response.json().then((weeks) => {
-//     divWeeks.innerHTML += weeks
-//   })
-// })
