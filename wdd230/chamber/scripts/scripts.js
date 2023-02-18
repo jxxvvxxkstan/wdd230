@@ -28,7 +28,7 @@ try {
     alert('Error with code or your browser does not support Locale');
   }
 
-// lazyload
+// Lazyload
 let imagesToLoad = document.querySelectorAll("img[data-src]");
 
 const loadImages = (image)=>{
@@ -64,7 +64,7 @@ function displayRatingValue() {
     rating.innerHTML = rangevalue.value;
 }
 
-rangevalue.addEventListener('change', displayRatingValue);
+// rangevalue.addEventListener('change', displayRatingValue);
 rangevalue.addEventListener('input', displayRatingValue);
 
 // Weather
@@ -103,101 +103,5 @@ async function apiFetch() {
   
   apiFetch();
 
-// Bussiness Directory
+//Directory
 
-const requestURL = 'data/members.json';
-const businesinfo = document.querySelector('.businesscards');
-
-async function getBusinessInfo() {
-  let response = await fetch(requestURL);
-  if (response.ok) {
-    let data = await response.json()
-    //console.log(data);
-    displayBusinessInfo(data)
-    
-  } else {
-    throw Error(response.statusText);
-  }
-}
-
-
-function displayBusinessInfo(members) {
-  members.Businessinfo.forEach(business => {
-    
-    let card = document.createElement("section");
-    card.setAttribute("id",business.businessnid);
-    let image = document.createElement("img")
-    let name = document.createElement("h2"); 
-
-
-    
-    let address  = document.createElement("p");
-    let contactNumber  = document.createElement("p");
-    let emailAddress  = document.createElement("p");
-    let webAddress  = document.createElement("a");
-    let memberLevel  = document.createElement("p");
-
-    name.innerHTML = business.businessname;
-
-
-    let businessImgURL = "images/" + business.companylogo
-    image.setAttribute("src", businessImgURL);
-    image.setAttribute("alt", `Logo for ${business.businessname}`);
-    image.setAttribute("loading", "lazy");
-
-
-    address.innerHTML = business.address +", " +business.state + " " + business.areacode;
-    address.setAttribute("class","physicaladdess");
-
-    contactNumber.innerHTML = `📞: ${business.contactnumer}`;
-
-    emailAddress.innerHTML = `📧: ${business.emailaddress}`;
-
-    /*busWebAddress.innerHTML = `💻: ${business.webaddress}`; */
-    webAddress.textContent = `💻: ${business.webaddress}`;
-    webAddress.setAttribute("href", business.webaddress);
-    webAddress.setAttribute("class","webaddress");
-
-    memberLevel.innerHTML = business.membershiplvl;
-    memberLevel.setAttribute("class","membershiplvl webaddressmargin");
-
-
-    buscard.append(image);
-    buscard.append(name);
-    buscard.append(industry);
-    buscard.append(address);
-    buscard.append(contactNumber);
-    buscard.append(emailAddress);
-    buscard.append(webAddress);
-    buscard.append(memberLevel)
-
-    businesinfo.append(card) // appends everything to the .card as declared at the top
-  })
-}
-
-getBusinessInfo();
-
-/* change display data from grid to list abd visa versa */
-
-const gridbtn = document.querySelector("#gridbtn");
-const listbtn = document.querySelector("#listbtn");
-const display = document.querySelector("#businesscards");
-
-
-
-/*put in grid format */
-gridbtn.addEventListener("click", () => {
-	display.classList.add("businesscards");
-	display.classList.remove("businesscardsList");
-});
-
-/*put in List format */
-listbtn.addEventListener("click", () => {
-	display.classList.add("businesscardsList");
-	display.classList.remove("businesscards");
-});
-
-/*
-  listbtn.setAttribute = ("class","activebutton");
-  listbtn.append();
-*/

@@ -106,11 +106,11 @@
         transform: scale(1.05); 
     }
 
-    .spot-container{
+    .container{
         padding: 2px 16px;
     }
 
-    .spot-container h3 {
+    .container h3 {
         font-size: .8rem;
     }
 
@@ -253,7 +253,67 @@
 
 /* ~~~~~~~~~~~~~~ DIRECTORY ~~~~~~~~~~~~~~ */
 
+main.directory-container {
+    width: 1080px;
+    height: auto;
+    margin: 1rem auto;
+}
 
+main.directory-container h2 {
+    grid-column: 1/5;
+    margin: 0 auto;
+}
+
+main.directory-container img {
+    display: flex;
+    margin: .5rem auto;
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+}
+
+.directoryCards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+    gap: 1rem;
+    width: 350px;
+}  
+
+#gridListBtns {
+    grid-column: 1/5;
+    grid-row: 2;
+    margin: 1rem auto;
+}
+
+#gridbtn:hover {
+    background-color: rgb(255, 255, 255, .7);
+}
+
+#listbtn:hover {
+    background-color: rgb(255, 255, 255, .7);
+}
+
+#okpo, #pkc, #rabusch, #aguia, #panvel, #william, #moita {
+    box-shadow: var(--shadow);
+    display: block;
+    width: 275px;
+    padding: 10px;
+    margin: 1rem;
+}
+#okpo:hover, #pkc:hover, #rabusch:hover, #aguia:hover, #panvel:hover, #william:hover, #moita:hover {
+    transform: scale(1.05); 
+}
+
+/* Member Card List format*/
+
+.directoryCardsList section img {
+    display: none;
+}
+.directoryCardsList section p.memberaddress, p.membershiplevel {
+    display: flex;
+}
 
 /* ~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~ */
 

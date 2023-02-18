@@ -1,74 +1,69 @@
 {
-    "members": [
+    "memberinfo": [
         {
-            "name": "OKPO",
+            "memberid": "okpo",
+            "logo": "okpo.jpg",
+            "membername": "OKPO Culture",
             "address": "Rua Tenente-Coronel Fabrício Pilar, 93 - Mont Serrat, Porto Alegre/RS",
-            "contactNumber": "(51) 1234-4321",
-            "webAddress": "https://www.instagram.com/okpo.culture/?hl=en",
-            "image": "images/okpo.jpg",
-            "memberLevel": "Gold Member"
+            "contactnumber": "(51) 1234-4321",
+            "webaddress": "https://www.instagram.com/okpo.culture/?hl=en",
+            "membershiplevel": "Gold Member"
         },
         {
-            "name": "PKC Group",
+            "memberid": "pkc",
+            "logo": "pkc.jpg",
+            "membername": "PKC Group",
             "address": "Av. Ipiranga, 7644 - Jardim Botânico, Porto Alegre/RS",
-            "contactNumber": "(51) 6789-9876",
-            "webAddress": "https://www.grupopkc.com.br/menus",
-            "image": [
-                {
-                    "businessImgURL": "images/pkc.jpg",
-                    "alt":
-                }
-            ],
-            "memberLevel": "Silver Member"
+            "contactnumber": "(51) 1234-4321",
+            "webaddress": "https://www.grupopkc.com.br/menus",
+            "membershiplevel": "Silver Member"
         },
         {
-            "name": "",
-            "address": "",
-            "contactNumber": "",
-            "webAddress": "",
-            "businessImgURL": "",
-            "memberLevel": ""
+            "memberid": "moita",
+            "logo": "moita.png",
+            "membername": "Moita Lanches",
+            "address": "Av. Ipiranga, 2800 - Santa Cecília, Porto Alegre/RS",
+            "contactnumber": "(51) 1234-4321",
+            "webaddress": "https://www.moitalanches.com.br/",
+            "membershiplevel": "Bronze Member"
         },
         {
-            "name": "",
-            "address": "",
-            "contactNumber": "",
-            "webAddress": "",
-            "businessImgURL": "",
-            "memberLevel": ""
+            "memberid": "panvel",
+            "logo": "panvel.png",
+            "membername": "Panvel Farmácias",
+            "address": "R. Vicente da Fontoura, 1676 - Rio Branco, Porto Alegre/RS",
+            "contactnumber": "(51) 1234-4321",
+            "webaddress": "https://www.panvel.com/",
+            "membershiplevel": "Gold Member"
         },
         {
-            "name": "",
-            "address": "",
-            "contactNumber": "",
-            "webAddress": "",
-            "businessImgURL": "",
-            "memberLevel": ""
+            "memberid": "william",
+            "logo": "william.png",
+            "membername": "William & Sons Coffee CO.",
+            "address": "R. Dinarte Ribeiro, Garagem, 214, Porto Alegre/RS",
+            "contactnumber": "(51) 1234-4321",
+            "webaddress": "https://tinyurl.com/ayazwjvp",
+            "membershiplevel": "Silver Member"
         },
         {
-            "name": "",
-            "address": "",
-            "contactNumber": "",
-            "webAddress": "",
-            "businessImgURL": "",
-            "memberLevel": ""
+            "memberid": "aguia",
+            "logo": "aguia.webp",
+            "membername": "Águia Veterinária e PetShop",
+            "address": "Rua Fernandes Vieira, 635/639 - Bom Fim, Porto Alegre/RS",
+            "contactnumber": "(51) 1234-4321",
+            "webaddress": "https://www.aguiaveterinaria.com.br/",
+            "membershiplevel": "Gold Member"
         },
         {
-            "name": "",
-            "address": "",
-            "contactNumber": "",
-            "webAddress": "",
-            "businessImgURL": "",
-            "memberLevel": ""
-        },
-        {
-            "name": "",
-            "address": "",
-            "contactNumber": "",
-            "webAddress": "",
-            "businessImgURL": "",
-            "memberLevel": ""
+            "memberid": "rabusch",
+            "logo": "rabusch.jpg",
+            "membername": "Rabusch Moda Feminina",
+            "address": "Av. Protásio Alves, 134 - Bom Fim, Porto Alegre/RS",
+            "contactnumber": "(51) 1234-4321",
+            "webaddress": "https://www.rabusch.com.br/",
+            "membershiplevel": "Silver Member"
         }
+        
     ]
     }
 

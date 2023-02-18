@@ -376,10 +376,75 @@ form label.top input:required:valid {
 
 .material-symbols-outlined {
   font-variation-settings:
-  'FILL' 1,
+  'FILL' 0,
   'wght' 200,
   'GRAD' 0,
   'opsz' 24
+}
+
+main.directory-container {
+    background-color: var(--second-color);
+    margin: .5rem;
+}
+main.directory-container h2 {
+    text-align: center;
+    margin: .5rem;
+}
+main.directory-container img {
+    display: none;
+}
+main.directory-container section {
+    box-shadow: var(--shadow);
+}
+#gridbtn {
+    padding: 1rem;
+    background-color: rgba(220, 220, 220, 0.5);
+    text-decoration: none;
+    border: 1px solid  rgba(0,0,0,0.5);
+    margin: 10px;
+}  
+#gridbtn:hover {
+    background-color: white;
+}
+  
+#listbtn {
+    padding: 1rem;
+    background-color: rgba(220, 220, 220, 0.5);
+    text-decoration: none;
+    border: 1px solid  rgba(0,0,0,0.5);
+    margin: 10px;
+}
+
+#listbtn:hover {
+    background-color: white;
+}
+  
+#gridListBtns {
+    text-align: center;
+}
+  
+/* Member Card List format*/
+  
+.directoryCardsList section {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+    margin: 1% 0%;
+    padding: 10px;
+}
+.directoryCardsList section p {
+    padding: 10px;
+}
+.directoryCardsList h2 {
+    font-size: 16px;
+    text-align: left;
+    width: 10rem;
+    margin: 3% 0 0 0;
+    
+}
+.directoryCardsList section p.memberaddress, p.membershiplevel {
+    display: none;
 }
 
 /* ~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~ */
