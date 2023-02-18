@@ -43,6 +43,12 @@
 	    font-size: .8rem;
     }
 
+    #banner {
+        display: flex;
+        font-size: large;
+        grid-column: 1/5;
+    }
+
     /* EVENT */
 
     #event {
@@ -73,7 +79,7 @@
 
     #callToAction a {
         position: absolute;
-        top: 20rem;
+        top: 24rem;
         right: 20rem;
         width: 250px;
         text-align: center;
